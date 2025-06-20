@@ -82,3 +82,8 @@ footer a {
   color: #ffebe0;
   text-decoration: none;
 }
+
+.logo {
+  width: 100px;
+  margin-bottom: 20px;
+}
