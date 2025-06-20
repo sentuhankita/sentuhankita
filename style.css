@@ -92,8 +92,9 @@ footer a {
   margin-top: 16px;
 }
 .sosmed-icons img {
-  width: 28px;
-  height: 28px;
-  margin: 0 8px;
+  width: 32px;
+  height: 32px;
+  margin: 0 10px;
   vertical-align: middle;
+  object-fit: contain;
 }
