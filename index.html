@@ -2,66 +2,102 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sentuhan Kita</title>
-  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Inter', sans-serif; }
+    h1, h2 { font-family: 'Playfair Display', serif; }
+  </style>
 </head>
-<body>
-  <header class="hero">
-    <div class="overlay">
-      <img src="logo.png" alt="Logo Sentuhan Kita" class="logo" />
-      <h1>Sentuhan Kita</h1>
-      <p>Aksesori Handmade Penuh Cerita & Cinta</p>
-      <a href="#koleksi" class="cta-button">Lihat Koleksi</a>
-    </div>
+<body class="bg-[#fdfaf6] text-gray-800">
+  <!-- Navbar -->
+  <header class="flex items-center justify-between p-4 shadow-sm bg-white">
+    <div class="text-xl font-bold">Sentuhan Kita</div>
+    <nav class="space-x-4 hidden md:block">
+      <a href="#" class="hover:text-pink-600">Home</a>
+      <a href="#produk" class="hover:text-pink-600">Produk</a>
+      <a href="#tentang" class="hover:text-pink-600">Tentang Kami</a>
+      <a href="#kontak" class="hover:text-pink-600">Kontak</a>
+    </nav>
   </header>
 
-  <section class="about">
-    <h2>Tentang Kami</h2>
-    <p>Setiap aksesori dari Sentuhan Kita dibuat dengan hati dan ketelitian. Kami merayakan keunikan, menyulam cerita dalam tiap detail. Inilah wujud karya yang personal, hangat, dan istimewa—seperti kamu.</p>
+  <!-- Hero Section -->
+  <section class="text-center py-16 px-4">
+    <h1 class="text-4xl md:text-5xl font-bold text-pink-600 mb-4">Aksesoris Handmade Penuh Sentuhan</h1>
+    <p class="text-lg max-w-xl mx-auto">Gelang, kalung, strap, dan cincin yang dibuat dengan hati, untuk kamu yang menghargai keunikan dan keindahan detail.</p>
+    <button class="mt-6 px-6 py-3 bg-pink-500 text-white rounded-2xl hover:bg-pink-600 transition">Lihat Koleksi</button>
+    <div class="mt-10">
+      <img src="https://via.placeholder.com/600x300" alt="Produk Sentuhan Kita" class="mx-auto rounded-2xl shadow-md">
+    </div>
   </section>
 
-  <section id="koleksi" class="produk">
-    <h2>Koleksi Unggulan</h2>
-    <div class="product-grid">
-      <div class="product-card">
-        <img src="gelang.jpg" alt="Gelang Handmade" />
-        <h3>Gelang Handmade</h3>
-        <p>Gelang dengan rajutan dan manik penuh makna, warna pastel lembut.</p>
+  <!-- Produk Section -->
+  <section id="produk" class="py-12 bg-white px-4">
+    <h2 class="text-3xl text-center font-bold text-pink-600 mb-8">Produk Kami</h2>
+    <div class="grid md:grid-cols-4 gap-6">
+      <div class="bg-[#fef7f1] p-4 rounded-2xl text-center shadow">
+        <img src="https://via.placeholder.com/150" class="mx-auto mb-2">
+        <h3 class="font-semibold">Gelang</h3>
+        <p class="text-sm">Warna pastel, desain simpel dan manis.</p>
       </div>
-      <div class="product-card">
-        <img src="kalung.jpg" alt="Kalung Handmade" />
-        <h3>Kalung Handmade</h3>
-        <p>Kalung berdesain etnik modern, cocok untuk berbagai gaya.</p>
+      <div class="bg-[#fef7f1] p-4 rounded-2xl text-center shadow">
+        <img src="https://via.placeholder.com/150" class="mx-auto mb-2">
+        <h3 class="font-semibold">Kalung</h3>
+        <p class="text-sm">Manik-manik lembut dan elegan.</p>
       </div>
-      <div class="product-card">
-        <img src="strap.jpg" alt="Strap Handphone" />
-        <h3>Strap Handphone</h3>
-        <p>Strap manik warna-warni, praktis & stylish untuk daily use.</p>
+      <div class="bg-[#fef7f1] p-4 rounded-2xl text-center shadow">
+        <img src="https://via.placeholder.com/150" class="mx-auto mb-2">
+        <h3 class="font-semibold">Strap HP</h3>
+        <p class="text-sm">Cocok untuk gaya harianmu.</p>
       </div>
-      <div class="product-card">
-        <img src="cincin.jpg" alt="Cincin Handmade" />
-        <h3>Cincin Handmade</h3>
-        <p>Cincin rajut atau manik lucu untuk pelengkap gaya manismu.</p>
+      <div class="bg-[#fef7f1] p-4 rounded-2xl text-center shadow">
+        <img src="https://via.placeholder.com/150" class="mx-auto mb-2">
+        <h3 class="font-semibold">Cincin</h3>
+        <p class="text-sm">Minimalis dengan kesan lembut.</p>
       </div>
     </div>
   </section>
 
-  <section class="cta">
-    <h2>Dapatkan Koleksi Handmade Spesial</h2>
-    <p>Kami buat dengan jumlah terbatas dan penuh makna. Temukan sentuhan yang cocok untukmu.</p>
-    <a href="https://wa.me/62895329824738" class="cta-button-dark">Pesan Sekarang</a>
+  <!-- Tentang Kami -->
+  <section id="tentang" class="py-16 px-4 text-center">
+    <h2 class="text-3xl font-bold text-pink-600 mb-4">Tentang Sentuhan Kita</h2>
+    <p class="max-w-xl mx-auto">Sentuhan Kita adalah brand lokal yang menghadirkan aksesoris handmade dengan nuansa lembut dan penuh cinta. Kami percaya keindahan terletak pada detail dan ketulusan.</p>
+    <div class="mt-8">
+      <img src="https://via.placeholder.com/400x200" class="mx-auto rounded-xl shadow">
+    </div>
   </section>
 
-  <footer>
-    <p>© 2025 Sentuhan Kita</p>
-    <div class="sosmed-icons">
-      <a href="https://wa.me/62895329824738" target="_blank"><img src="wa.png" alt="WhatsApp"></a>
-      <a href="https://instagram.com/sentuhankita_" target="_blank"><img src="ig.png" alt="Instagram"></a>
-      <a href="https://tiktok.com/@sentuhan.kita" target="_blank"><img src="tiktok.png" alt="TikTok"></a>
-      <a href="https://shopee.co.id/sentuhankita" target="_blank"><img src="shopee.png" alt="Shopee"></a>
+  <!-- Testimoni -->
+  <section class="bg-[#fef7f1] py-12 px-4">
+    <h2 class="text-3xl font-bold text-center text-pink-600 mb-6">Apa Kata Mereka</h2>
+    <div class="grid md:grid-cols-3 gap-6 max-w-6xl mx-auto">
+      <div class="bg-white p-4 rounded-2xl shadow">
+        <p>“Gelangnya cantik dan simpel. Suka banget sama packagingnya juga!”</p>
+        <div class="mt-2 text-sm text-gray-600">– Amira</div>
+      </div>
+      <div class="bg-white p-4 rounded-2xl shadow">
+        <p>“Strap HP-nya cocok banget buat daily use. Desainnya cute!”</p>
+        <div class="mt-2 text-sm text-gray-600">– Livia</div>
+      </div>
+      <div class="bg-white p-4 rounded-2xl shadow">
+        <p>“Saya beli sebagai hadiah, dan penerimanya senang sekali. Terima kasih!”</p>
+        <div class="mt-2 text-sm text-gray-600">– Rizka</div>
+      </div>
     </div>
+  </section>
+
+  <!-- Footer -->
+  <footer id="kontak" class="py-8 bg-white text-center text-sm text-gray-600">
+    <div class="flex justify-center space-x-4 mb-2">
+      <a href="https://wa.me/1234567890" target="_blank"><img src="https://img.icons8.com/ios-filled/24/000000/whatsapp.png"/></a>
+      <a href="https://instagram.com/sentuhankita" target="_blank"><img src="https://img.icons8.com/ios-filled/24/000000/instagram-new.png"/></a>
+      <a href="https://tiktok.com/@sentuhankita" target="_blank"><img src="https://img.icons8.com/ios-filled/24/000000/tiktok.png"/></a>
+      <a href="https://shopee.co.id/sentuhankita" target="_blank"><img src="https://img.icons8.com/ios-filled/24/000000/shopee.png"/></a>
+    </div>
+    <p>© 2025 Sentuhan Kita. All rights reserved.</p>
   </footer>
 </body>
 </html>
